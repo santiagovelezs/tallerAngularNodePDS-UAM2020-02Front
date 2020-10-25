@@ -1,0 +1,38 @@
+<div class="col mt-4">
+    <div class="card">
+        <div class="card-header">
+            <p>Almacén De Deporte</p>
+        </div>
+        <div class="card-body">
+            <table *ngIf="patinetas" class="table table-hover mt-4">
+                <thead class="table-primary">
+                    <td>Tipo Material</td>
+                    <td>Velocidad</td>
+                    <td>Ancho</td>
+                    <td>Alto</td>
+                    <td>Color</td>
+                    <td>Precio</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pat of patinetas">
+                        <td>{{ pat.tipo_material }}</td>
+                        <td>{{ pat.velocidad }}</td>
+                        <td>{{ pat.ancho }}</td>
+                        <td>{{ pat.alto }}</td>
+                        <td>{{ pat.color }}</td>
+                        <td>{{ pat.precio }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p *ngIf="total" class="text-right">Total: {{ total }} </p>
+            
+            <!-- Buttons -->            
+            <div class="form-group">                
+                <button type="button" class="btn btn-primary" (click)="calcTotal()">
+                   Calcular Total
+                </button>                
+            </div>
+        </div>
+    </div>
+</div>

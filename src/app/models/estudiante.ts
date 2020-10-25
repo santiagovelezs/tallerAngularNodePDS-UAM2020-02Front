@@ -1,5 +1,5 @@
 export interface Estudiante {
-    cedula: String;
+    cedula: string;
     nombre: string;
     apellido: string;
     edad: number;

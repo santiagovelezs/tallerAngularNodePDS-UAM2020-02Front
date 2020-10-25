@@ -12,7 +12,7 @@ export class TablaMultService {
 
   }
 
-  mult(num: Number){
+  mult(num: number){
     return this.http.post(this.URL_API, num);
   }
 

@@ -8,13 +8,15 @@ import { TablaMultComponent } from './components/tabla-mult/tabla-mult.component
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MejoresEstudiantesComponent } from './components/mejores-estudiantes/mejores-estudiantes.component';
+import { AlmacenDeporteComponent } from './components/almacen-deporte/almacen-deporte.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JuegoBolitaComponent,
     TablaMultComponent,
-    MejoresEstudiantesComponent
+    MejoresEstudiantesComponent,
+    AlmacenDeporteComponent
   ],
   imports: [
     BrowserModule,
